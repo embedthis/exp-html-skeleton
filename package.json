@@ -1,0 +1,20 @@
+{
+    "name": "exp-html-scaffold",
+    "description": "HTML Scaffold for Expansive",
+    "version": "0.1.0",
+    "keywords": [
+        "expansive-plugin",
+        "html"
+    ],
+    "licenses": "GPL",
+    "export": [
+        {
+            "from": [
+                "documents/**",
+                "partials/**",
+                "layouts/**"
+            ],
+            "to": "."
+        }
+    ],
+}

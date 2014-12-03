@@ -1,0 +1,8 @@
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="<@= meta.description || meta.title @>">
+    <link href="/css/all.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+
+<@
+    addItems('scripts', [])
+@>
