@@ -1,4 +1,4 @@
-exp-html-scaffold License
+exp-html-skeleton License
 ===
 
 [MIT](http://opensource.org/licenses/MIT)

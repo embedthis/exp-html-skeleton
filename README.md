@@ -1,18 +1,18 @@
-exp-html-scaffold
+exp-html-skeleton
 ===
 
-Expansive HTML scaffold plugin.
+Expansive HTML skeleton plugin.
 
 This provides:
 
- * Configuration for exp-less, exp-js
+ * Configuration for Expansive plugins: less, js
  * Default layout 
  * Default partials 
  * Starter home page
 
 ### To install:
 
-exp install html-scaffold
+exp install html-skeleton
 
 ### Get Pak from
 

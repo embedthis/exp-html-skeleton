@@ -1,5 +1,6 @@
+
         <div class="menu">
-            <div class="item">Demo</div>
+            <span class="item">Demo</span>
             <a class="item <@= menu('home') @>" href="/">Home</a>
             <a class="item <@= menu('file') @>" href="/file.html">File</a>
         </div>

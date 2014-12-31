@@ -1,2 +1,5 @@
-<div class="ui basic center aligned segment" id="footer">
-</div>
+
+    <footer>
+    </footer>
+    <@ renderScripts() @>
+
