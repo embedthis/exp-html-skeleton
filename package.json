@@ -7,20 +7,24 @@
         "html"
     ],
     "dependencies": {
-        "exp-less": "~0.1",
-        "exp-css": "~0.1"
+        "exp-js": "~0.2",
+        "exp-less": "~0.2",
+        "exp-css": "~0.2"
     },
     "licenses": "GPL",
     "export": [
         {
             "from": [
-                "documents/**",
                 "partials/**",
-                "layouts/**"
+                "layouts/**",
+                "source/**"
             ],
             "to": "${TOP}",
             "overwrite": false
         }
     ],
-    "skeleton": true
+    "blend": [
+        "expansive.json"
+    ],
+    "mode": "debug"
 }
