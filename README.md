@@ -27,21 +27,23 @@ The skeleton is configured for a "debug" and "release" mode of operation via the
 "mode" property in package.json. By default, debug mode will disable minification and
 mangling of scripts.
 
-### To configure in expansive.json:
+### Configure
 
-* compile-less-css.enable -- Enable the compile-less-css service to process less files.
-* compile-less-css.stylesheet -- Primary stylesheet to update if any less file changes.
+#### expansive.json
+
+* compile-less-css.enable &mdash; Enable the compile-less-css service to process less files.
+* compile-less-css.stylesheet &mdash; Primary stylesheet to update if any less file changes.
     If specified, the "dependencies" map will be automatically created. 
-* compile-less-css.dependencies -- Explicit map of dependencies if not using "stylesheet". 
-* compile-less-css.documents -- Array of less files to compile.
-* prefix-css.enable - Enable running autoprefixer on CSS files to handle browser specific extensions.
-* minify-css.enable - Enable minifying CSS files.
-* minify-js.enable - Enable minifying script files.
-* minify-js.files - Array of files to minify. Files are relative to 'source'.
-* minify-js.compress - Enable compression of script files.
-* minify-js.mangle - Enable mangling of Javascript variable and function names.
-* minify-js.dotmin - Set '.min.js' as the output file extension after minification. Otherwise will be '.js'.
-* minify-js.exclude - Array of files to exclude from minification. Files are relative to 'source'.
+* compile-less-css.dependencies &mdash; Explicit map of dependencies if not using "stylesheet". 
+* compile-less-css.documents &mdash; Array of less files to compile.
+* prefix-css.enable &mdash; Enable running autoprefixer on CSS files to handle browser specific extensions.
+* minify-css.enable &mdash; Enable minifying CSS files.
+* minify-js.enable &mdash; Enable minifying script files.
+* minify-js.files &mdash; Array of files to minify. Files are relative to 'source'.
+* minify-js.compress &mdash; Enable compression of script files.
+* minify-js.mangle &mdash; Enable mangling of Javascript variable and function names.
+* minify-js.dotmin &mdash; Set '.min.js' as the output file extension after minification. Otherwise will be '.js'.
+* minify-js.exclude &mdash; Array of files to exclude from minification. Files are relative to 'source'.
 
 ```
 {
