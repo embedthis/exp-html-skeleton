@@ -1,0 +1,30 @@
+/*
+    expansive.json - Configuration for exp-html-skeleton
+ */
+{
+    control: {
+        script: "function menu(item) meta.menu == item ? 'active' : ''",
+        collections: {
+            styles: [
+                'css/all.css',
+            ]
+        },
+    },
+    services: {
+        'clean-css': true,
+        'compile-less-css': {
+            stylesheet: 'css/all.css'
+        }
+    },
+    debug: {
+        services: {
+            'minify-css':   false,
+            'minify-js':    false
+        }
+    },
+    release: {
+        services: {
+            'minify-css': true
+        }
+    }
+}
