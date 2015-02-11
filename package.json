@@ -12,19 +12,27 @@
         "exp-css": "~0.2"
     },
     "licenses": "GPL",
-    "export": [
-        {
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/embedthis/exp-html-skeleton.git"
+    },
+    "pak": {
+        "blend": {
+            "pak": {
+                "?mode": "debug",
+                "?import": true
+            }
+        },
+        "export": {
             "from": [
-                "partials/**",
+                "contents/**",
                 "layouts/**",
-                "source/**"
+                "partials/**"
             ],
             "to": "${TOP}",
             "overwrite": false
-        }
-    ],
-    "blend": [
-        "expansive.json"
-    ],
-    "mode": "debug"
+        },
+        "manage": "expansive.json",
+        "version": ">=0.10.0"
+    }
 }

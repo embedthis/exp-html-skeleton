@@ -3,7 +3,6 @@
  */
 {
     control: {
-        script: "function menu(item) meta.menu == item ? 'active' : ''",
         collections: {
             styles: [
                 'css/all.css',
