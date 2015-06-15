@@ -2,28 +2,11 @@
     expansive.json - Configuration for exp-html-skeleton
  */
 {
-    control: {
-        collections: {
-            styles: [
-                'css/all.css',
-            ]
-        },
-    },
-    services: {
-        'clean-css': true,
-        'compile-less-css': {
-            stylesheet: 'css/all.css'
-        }
-    },
-    debug: {
-        services: {
-            'minify-css':   false,
-            'minify-js':    false
-        }
-    },
     release: {
         services: {
-            'minify-css': true
+            "minify-css": {
+                '?minify': true
+            }
         }
     }
 }
