@@ -2,6 +2,6 @@
     <title><@= meta.title @></title>
     <meta charset="utf-8" />
     <meta name="description" content="<@= meta.description || meta.title @>">
-    <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+    <link rel="icon" href="data:image/x-icon;base64," type="image/x-icon" />
     <@ renderStyles() @>
 
