@@ -1,7 +1,7 @@
 {
     "name": "exp-html-skeleton",
     "description": "HTML Skeleton for Expansive",
-    "version": "0.1.1",
+    "version": "0.2.0",
     "keywords": [
         "expansive-plugin",
         "html"
@@ -10,9 +10,11 @@
         "exp-js": "~0.2",
         "exp-less": "~0.2",
         "exp-css": "~0.2",
-        "exp-reload": "~0.2"
+        "exp-reload": "~0.2",
+        "exp-html": "~0.1"
     },
     "devDependencies": {
+        "expansive": ">=0.6.0",
         "pak": ">=0.11.3"
     },
     "licenses": "GPL",
