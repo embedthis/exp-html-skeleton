@@ -19,23 +19,19 @@ This provides:
 
 ### Description
 
-The HTML skeleton is a basic starter skeleton for Expansive. It provides a default layout,
-partial pages and is configured to use Less stylesheets. Extensions are installed
-to process less stylesheets and minify scripts.
+The HTML skeleton is a basic starter skeleton for Expansive. It provides a default layout, partial pages and is configured to use Less stylesheets. Extensions are installed to process less stylesheets and minify scripts.
 
-The skeleton is configured for a "debug" and "release" mode of operation via the 
-"mode" property in package.json. By default, debug mode will disable minification and
-mangling of scripts.
+The skeleton is configured for a "debug" and "release" mode of operation via the "mode" property in package.json. By default, debug mode will disable minification and mangling of scripts.
 
 ### Configure
 
 #### expansive.json
 
+* less.dependencies &mdash; Explicit map of dependencies if not using "stylesheet". 
 * less.enable &mdash; Enable the less service to process less files.
+* less.files &mdash; Array of less files to compile.
 * less.stylesheet &mdash; Primary stylesheet to update if any less file changes.
     If specified, the "dependencies" map will be automatically created. 
-* less.dependencies &mdash; Explicit map of dependencies if not using "stylesheet". 
-* less.documents &mdash; Array of less files to compile.
 * css.prefix &mdash; Enable running autoprefixer on CSS files to handle browser specific extensions.
 * css.minify &mdash; Enable minifying CSS files.
 * js.enable &mdash; Enable minifying script files.
@@ -49,9 +45,9 @@ mangling of scripts.
     services: {
         'less': {
             enable: true,
+            files: [ '!**.less', '**.css.less' ]
             stylesheet: 'css/all.css',
             dependencies: { 'css/all.css.less' : '**.less' },
-            documents: [ '!**.less', '**.css.less' ]
         },
         'css': {
             prefix: true,
