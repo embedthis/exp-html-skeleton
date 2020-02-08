@@ -1,18 +1,18 @@
 {
     "name": "exp-html-skeleton",
     "description": "HTML Skeleton for Expansive",
-    "version": "0.2.1",
+    "version": "1.0.0",
     "keywords": [
         "expansive-plugin",
         "html"
     ],
     "dependencies": {
-        "embedthis/exp-js": "~0.3",
-        "embedthis/exp-less": "~0.3",
-        "embedthis/exp-css": "~0.3",
-        "embedthis/exp-reload": "~0.3",
+        "embedthis/exp-js": "~1",
+        "embedthis/exp-less": "~1",
+        "embedthis/exp-css": "~1",
+        "embedthis/exp-reload": "~1",
         "embedthis/exp-html": "~0.2",
-        "embedthis/exp-canon": "~0.3"
+        "embedthis/exp-canon": "~1"
     },
     "devDependencies": {
         "expansive": ">=0.7.0",
